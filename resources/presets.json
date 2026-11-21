@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "amp": 10.0,
+    "speed": 20.0,
+    "cx": 0.0,
+    "cy": 0.0,
+    "rx": 150.0,
+    "ry": 150.0,
+    "rot": 0.0,
+    "aniso_x": 0.3,
+    "aniso_y": 1.0,
+    "zeta": 0.2,
+    "freq": 3.0
+  },
+  "presets": {
+    "胸部": {"aniso_x": 0.3, "aniso_y": 1.0, "zeta": 0.15, "freq": 2.5},
+    "臀部": {"aniso_x": 0.8, "aniso_y": 1.0, "zeta": 0.25, "freq": 1.8},
+    "肩部": {"aniso_x": 0.5, "aniso_y": 0.5, "zeta": 0.4, "freq": 4.0}
+  }
+}

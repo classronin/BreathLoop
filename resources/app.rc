@@ -1,0 +1,12 @@
+// exe 图标与窗口图标共用同一份 .ico。
+// 1            —— 资源管理器/任务栏读的是编号最小的 ICON 组，必须给个数字 ID。
+// "GLFW_ICON"   —— GLFW 在注册窗口类时按这个名字取图标
+//                 （E:\source\glfw\src\win32_window.c:1294-1304
+//                  LoadImageW(GetModuleHandleW(NULL), L"GLFW_ICON", ...)）。
+
+1 ICON "BreathLoop.ico"
+"GLFW_ICON" ICON "BreathLoop.ico"
+
+// 作者卡片里的二维码/头像：以 RCDATA 嵌进 exe，运行时按名字取出，
+// 不依赖外部文件（也不需要解压到临时目录）。
+AUTHOR_PNG RCDATA "author.png"
